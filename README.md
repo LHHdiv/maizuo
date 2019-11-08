@@ -1,24 +1,21 @@
-# maizuo
+# 卖座网站：
 
-## Project setup
-```
-npm install
-```
+#### 路由
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+一级路由：(包裹二级路由,都需要有一个一级路由)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+| 路径          | 组件名 |
+| ------------- | ------ |
+| film          | Home   |
+| /film/:filmId | Film   |
+| / city        | City   |
+| /login        | Login  |
+| /money        | Money  |
 
-### Lints and fixes files
-```
-npm run lint
-```
+二级路由：
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| 路径     | 组件名  | 它的父级 |
+| -------- | ------- | -------- |
+| /films   | Films   | /        |
+| /cinemas | Cinemas | /        |
+| /center  | Center  | /        |
